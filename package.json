@@ -6,6 +6,8 @@
   "author": "Michael Sholty",
   "license": "MIT",
   "dependencies": {
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
     "font-awesome": "^4.7.0",
     "froala-editor": "^2.6.1",
     "immutable": "^3.8.1",
@@ -25,7 +27,9 @@
     "redux-devtools": "^3.3.1",
     "redux-devtools-dock-monitor": "^1.1.1",
     "redux-devtools-log-monitor": "^1.1.1",
-    "redux-thunk": "^2.1.0"
+    "redux-thunk": "^2.1.0",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.8"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",

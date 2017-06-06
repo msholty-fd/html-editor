@@ -4,12 +4,8 @@ import FroalaEditor from 'react-froala-wysiwyg';
 require('froala-editor/js/froala_editor.pkgd.min.js');
 require('froala-editor/css/froala_editor.pkgd.min.css');
 
-// Require Editor JS files.
-// require("froala-editor/js/froala_editor.pkgd.min.js");
-// require("froala-editor/css/froala_editor.pkgd.min.css");
-
 // Require Font Awesome.
-// require('font-awesome/css/font-awesome.css');
+require('font-awesome/css/font-awesome.css');
 
 // Include special components if required.
 // var FroalaEditorView = require('react-froala-wysiwyg/FroalaEditorView');
