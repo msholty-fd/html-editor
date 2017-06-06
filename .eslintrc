@@ -1,0 +1,47 @@
+{
+  "parser": "babel-eslint", // https://github.com/babel/babel-eslint
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "test": true,
+    "it": true,
+    "expect": true,
+    "describe": true,
+    "jest": true,
+    "beforeEach": true,
+    "afterEach": true
+  },
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": false,
+    "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": false,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+    "jsx": true
+  },
+  "extends": "airbnb",
+  "plugins": [
+    "import",
+    "react"
+  ],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.js"
+      }
+    },
+    "react/forbid-prop-types": ["off"]
+  }
+}
