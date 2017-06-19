@@ -14,4 +14,9 @@ require('font-awesome/css/font-awesome.css');
 // var FroalaEditorImg = require('react-froala-wysiwyg/FroalaEditorImg');
 // var FroalaEditorInput = require('react-froala-wysiwyg/FroalaEditorInput');
 
-export default () => <FroalaEditor tag="textarea" />;
+export default () => (
+  <FroalaEditor
+    tag="textarea"
+    config={{ toolbarInline: true }}
+  />
+);
