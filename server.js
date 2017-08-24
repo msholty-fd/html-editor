@@ -8,7 +8,7 @@ new WebpackDevServer(webpack(config), {
   historyApiFallback: true,
   quiet: false,
   noInfo: false,
-  https: true,
+  https: false,
   stats: {
     assets: false,
     colors: true,
