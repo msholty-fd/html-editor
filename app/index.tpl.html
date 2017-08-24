@@ -1,23 +1,74 @@
-<!doctype html>
-<html lang="en" style="display: flex; flex: 1; height: 100%">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>HTML Editor</title>
-    <meta name="description" content="The source for all your Magic: the Gathering limited needs">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    #root > div {
-        display: flex;
-        flex: 1;
-    }
-    </style>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Pixel Test</title>
 </head>
+<body>
+    <h1>Pixel Test</h1>
+    <div>
+        <button onClick="update()">Update</button><br>
+        <button onClick="configuredRight()">Right</button><br>
+        <button onClick="configuredWrong()">Wrong</button><br>
+        <button onClick="configuredWrongAgain()">Wrong</button>
 
-<body style="display: flex; flex: 1; margin: 0">
-    <div id="root" style="display: flex; flex: 1"></div>
+<a href="http://localhost:8000/?utm_source=link&utm_campaign=2" target="_blank">Test rfr tracking</a>
+    </div>
+
+<script>
+!function(f,e,a,t,h,r){if(!f[h]){r=f[h]=function(){r.invoke?
+r.invoke.apply(r,arguments):r.queue.push(arguments)},
+r.queue=[],r.loaded=1*new Date,r.version="1.0.0",
+f.FeathrBoomerang=r;var g=e.createElement(a),
+h=e.getElementsByTagName("head")[0]||e.getElementsByTagName("script")[0].parentNode;
+g.async=!0,g.src=t,h.appendChild(g)}
+}(window,document,"script","/js/boomerang.js","feathr")
+
+
+feathr('fly', '5589c9c30a6540a7a33d3838', {
+    dev: true
+});
+feathr('sprinkle', 'page_view', {
+    RegistrationNumber: '525541',
+    BadgeNumber: '525541',
+    EventNumber: '652'
+});
+feathr('update', {
+    name: 'Kanye Nest',
+    Age: '46',
+    FAV_COLOR: 'purple'
+});
+
+</script>
+<script type="text/javascript">
+
+    function configuredRight(){
+        feathr('sprinkle', 'purchase', {
+            value: 4.99,
+            currency: 'USD'
+        });
+    };
+
+    function configuredWrong(){
+        feathr('sprinkle', 'purchase');
+    };
+
+    function configuredWrongAgain(){
+        feathr('sprinkle', 'purchase', {
+            valu: 1.99,
+            currency: 'USD'
+        });
+    };
+
+    function update() {
+        console.log('test');
+        feathr('update', {
+            email: 'test@info.com',
+            name: 'Atticus Finch',
+            occupation: 'Captain Janeway'
+        })
+    }
+
+</script>
 </body>
-
 </html>
